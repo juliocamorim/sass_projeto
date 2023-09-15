@@ -58,7 +58,7 @@ header {
             @include elementoForm();
             background-color: transparent;
             border: none;
-            border-bottom: 10px solid variaveis.$CorPrincipal;
+            border-bottom: 3px solid variaveis.$CorPrincipal;
         }
         button {
             @include elementoForm();
@@ -68,10 +68,16 @@ header {
             font-weight: bold;
             cursor: pointer;
             color: #fff;
+
+            &:hover {
+                background-color: darken(variaveis.$CorSecundaria, 10%);
+            }
         }
     }
 }
 
-@media screen and  (max-width: variaveis.$mobile) {
-
+@media screen and (max-width: variaveis.$mobile) {
+    .container {
+        max-width: 90%;
+    }
 }

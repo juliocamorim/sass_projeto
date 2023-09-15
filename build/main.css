@@ -50,7 +50,7 @@ header {
   margin-bottom: 16px;
   background-color: transparent;
   border: none;
-  border-bottom: 10px solid #1abc9c;
+  border-bottom: 3px solid #1abc9c;
 }
 .form-container form button {
   padding: 8px;
@@ -63,6 +63,15 @@ header {
   font-weight: bold;
   cursor: pointer;
   color: #fff;
+}
+.form-container form button:hover {
+  background-color: #107360;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
